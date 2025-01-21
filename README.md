@@ -22,7 +22,7 @@ Now, I will present the new columns generated to enhance our understanding of th
 
 Note: In the context of this project, I will not be using Code_type and Status columns.
 
-## Technical
+## Technical (tbu)
 
 ### Excel & Power Query
 The raw data needs big cleaning, it was filled with typos, duplicate values, inconsistent formatting, missing values, etc.
@@ -42,7 +42,7 @@ tbu
 ### Power BI
 tbu
 
-## Insights and Recommendation
+## Insights and Recommendation (On-going)
 Interactive Insight Dashboard
 
 ![image](https://github.com/user-attachments/assets/f6858c91-692c-494f-8703-bb8ddd0ff5e6)
