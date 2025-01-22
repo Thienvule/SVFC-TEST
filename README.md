@@ -5,6 +5,8 @@
 ## Context Overview
 The SVFC marketing team has gathered customer data for March and April 2024. The manager has tasked me with analyzing insights from the customer segment that registered for loan products on iShinhan. Additionally, I will provide recommendations for the performance team for the upcoming month.
 
+The current timeline: The second week of April 2024.
+
 Tool used:
 - Power Query: Data cleaning and processing
 - Power BI: Visualize insights
@@ -140,7 +142,7 @@ Google, TikTok, and Facebook generate the highest applications and loan amounts,
 
 
 
-#### Week Number
+#### Application and Loan Amount by Week of Month
 
 ![image](https://github.com/user-attachments/assets/7eb454ca-6267-488d-a08f-9311847ada3c)
 
@@ -186,6 +188,72 @@ Google, TikTok, and Facebook generate the highest applications and loan amounts,
 
   - This move, once again, could only be successful when we bettered our data collection process as we lack data on the "Not Specified" loan purpose.
   - Investigate why TikTok's application collapsed on the 3rd week to better our optimization.
+
+
+#### Application and Loan Amount by Day of the Week
+
+![image](https://github.com/user-attachments/assets/c1d1c4ed-1b7a-4555-888c-c9426c599d21)
+
+- Observations:
+  - Wednesday through Saturday (Days 3–6) show the highest activity:
+  - Thursday and Friday drive the most applications (~40 applications), with corresponding loan amounts of 783M and 728M, respectively.
+  - Activity drops significantly on Sundays and early weekdays (Day 0, Day 1).
+- Insights:
+  - Mid- to late-week days (Wednesday through Saturday) are critical for loan applications and volumes, likely due to increased consumer interaction and decision-making on these days.
+  - Early weekdays and Sundays are quiet periods, suggesting a need for better outreach or incentives to boost activity during these off-peak times.
+- Action:
+  - Concentrate marketing campaigns and promotional efforts during high-activity days (Wednesday-Friday) for maximum impact.
+  - Develop engagement strategies (e.g., exclusive offers, reminders) for Monday and Sunday to level the distribution of applications.
+
+#### Application and Loan Amount by Day of Week and Source
+
+![image](https://github.com/user-attachments/assets/b92ae12e-2df7-46e8-985d-9c2c4740268d)
+
+- Observations:
+  - Across all sources, TikTok and Google maintain consistently high application and loan amount contributions, particularly on high-performing days (Wednesday–Saturday).
+  - TikTok/Google significantly leads on days of the week with spikes, whereas Facebook, Organic, and EDM sources exhibit relatively flat performance throughout the week.
+- Insights:
+  - TikTok/Google drives traffic and high loan amounts on key days, showing its potential for targeted, time-specific campaigns aimed at capturing week-day momentum.
+  - Facebook applications also peaks on Thursday, followed by a significant drop.
+  - EDM underperformance suggests either ineffective targeting or lower user engagement with this channel during the week.
+- Action:
+  - Leverage TikTok/Facebook (on Thursday)/Google with daily-specific campaigns (e.g., peak offer periods mid-week).
+  - Perform a deep dive into non-performing channels like EDM, focusing on engagement strategies and user behavior analysis.
+
+#### Key Takeaways and Recommendations
+1. Source Performance:
+- TikTok and Google are the standout performers across all metrics (applications and loan amounts).
+- Actions:
+  - Focus on scaling TikTok campaigns for high-tech demographics and larger loan amounts.
+  - Double down on high-performing Google campaigns while refining targeting for mid-tier income brackets.
+
+2. Timing and Week Trends:
+- Applications and loan amounts pick up mid-week and peak in Week 5 or Wednesday-Saturday.
+- Actions:
+  - Align campaigns and promotions with mid-week days and Week 5 intensity.
+  - Explore campaigns for off-peak periods (early weekdays and Sundays) to level out distributions.
+
+3. Underperforming Channels:
+- Facebook, EDM, and Organic sources show low engagement and minimal contribution to applications and loan amounts.
+- Actions: Assess the ROI of these channels and test alternative strategies, such as new content formats, audience segmentation, or cross-channel marketing efforts.
+
+4.Consumer Activity:
+- The increase in activity in later weeks and towards the middle/end of the week suggests loan decision-making aligns with pay cycles, financial obligations, or successful outreach campaigns.
+- Actions: Map campaigns and communications to customer paydays or known financial cycle triggers to maximize impact.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
