@@ -133,14 +133,45 @@ Google, TikTok, and Facebook generate the highest applications and loan amounts,
   ![image](https://github.com/user-attachments/assets/8943b743-e571-4057-b3c3-52b433f4002f)
   ![image](https://github.com/user-attachments/assets/fa70d511-c290-415a-97d0-17940d4b3381)
 
+##### Loan Purpose
 
+![image](https://github.com/user-attachments/assets/30a89ebc-c46c-45b7-95e6-be6b5463c4cb)
 
+- "Unknown" dominates applications and loan amounts (2312M loan amount) again due to missing or unclear data on loan purposes.
+- Other identified purposes include:
+- Home purchases contribute 170M loan amounts — the top specified reason.
+- Maintenance services like “Mua phương tiện” and Sửa chữa nhà contribute smaller loan volumes (120M; 20M respectively).
+- Insight: Missing information regarding loan purposes poses a significant analytical limitation.
+- Action:
+  - Ensure that customers input accurate loan purposes during application submissions to better the tailor messages.
+  - Promote popular loan services like home purchases through enhanced marketing campaigns.
+
+##### Industry
+
+![image](https://github.com/user-attachments/assets/d1b3e8f6-4fea-4f95-b414-0917a8536cfb)
+
+- The "Unknown" category constitutes a large percentage of applications and the largest loan volume (1,302M loan amount), followed by:
+- Office work (516M) and Financial Acts (246M).
+- Insight: Missing industry data represents another significant data gap. However, office workers and finance professionals are key segments contributing to loan demand.
+- Action:
+  - Mandate the collection of industry data within the application process.
+  - Develop specific loan products tailored to these key segments (e.g., office workers, financial professionals).
+
+##### Reject Reasons
+
+![image](https://github.com/user-attachments/assets/4c985e65-b4a0-4cd9-a6d1-660a42fdaa17)
+
+- Top reasons for loan rejection include:
+  - Ver-Uncontactable with 10 instances.
+  - Other reasons include TUD-No show, cannot contact, restricted profile, lack of documents.
+- Insight: Most rejections are due to unsuccessful contact reflecting process bottlenecks or lack of qualification. Besides, 5 of the most value loan as mentioned before were rejected because of this reason.
+- Action:
+  - Advocate for better communication during application submission to reduce errors.
+  - Provide an educational guide or FAQs to help applicants meet eligibility criteria.
 
 ### Interactive Trend Dashboard
 
 ![image](https://github.com/user-attachments/assets/ba526a60-0433-43f7-9e2b-c77cf8987741)
-
-
 
 #### Application and Loan Amount by Week of Month
 
