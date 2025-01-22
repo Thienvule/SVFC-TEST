@@ -43,7 +43,7 @@ tbu
 tbu
 
 ## Insights and Recommendation (On-going)
-Interactive Insight Dashboard
+### Interactive Insight Dashboard
 
 ![image](https://github.com/user-attachments/assets/f6858c91-692c-494f-8703-bb8ddd0ff5e6)
 
@@ -51,7 +51,7 @@ Note: If the user wishes to explore further, they can always use the filter to d
 
 ![image](https://github.com/user-attachments/assets/4d9551f0-f6b8-4777-a9c6-121dd0d7d98e)
 
-### High-level Observations
+#### High-level Observations
 
 ![image](https://github.com/user-attachments/assets/d85f6328-3b47-4335-a656-fe2fc8cbf774)
 
@@ -60,8 +60,8 @@ Note: If the user wishes to explore further, they can always use the filter to d
   - 2.62 Billion Loan Amount: This reflects a significant loan volume, indicating high-value loans are being processed despite the relatively low number of applications. However, more data of other months is needed for a clearer comparison analysis.
   - Approximately 57% of our customers are male, while only around 36% are female.
 
-### Detailed Insights
-#### Income Group
+#### Detailed Insights
+##### Income Group
 
 ![image](https://github.com/user-attachments/assets/40d537d5-9c32-4811-b0ee-4368e17617be)
 
@@ -78,7 +78,7 @@ Note: If the user wishes to explore further, they can always use the filter to d
 
 ![image](https://github.com/user-attachments/assets/d945f83f-cf6d-4252-9729-a93eec09973b)
 
-#### Current Location
+##### Current Location
 
 ![image](https://github.com/user-attachments/assets/0c365359-a9ad-42b3-93c2-f4ff5cda92e5)
 
@@ -87,13 +87,23 @@ Hồ Chí Minh (HCM) and Đồng Nai are the top locations for both applications
   - This suggests that targeted marketing efforts may be necessary to enhance application volume in Đồng Nai region.
   - Major urban centers like HCM/Hà Nội dominate, which aligns with expectations given higher population density and better financial access in cities.
   - Smaller cities like Bà Rịa/Hải Phòng/ showed lower applications (~60M loan amounts), yet it's still a potential considering the lower population density.
+  - Gender filtered:
+    - The number of male applicants was twice that of female applicants. However, the total loan amount requested by female applicants (1.06 billion VND) was very close to the total amount requested by male applicants (1.31 billion VND).
+    - In Hà Nam, although the number of loan applications was significantly lower than that in major cities like Ho Chi Minh City (HCMC), the total loan amount was considerably higher—300 million VND in Hà Nam compared to only 161 million VND in HCMC. This discrepancy suggests the need for further investigation and consideration of Hà Nam in our analysis.
+
+![image](https://github.com/user-attachments/assets/caf560c2-b740-47f7-96f2-26267b96469a)
+
+
 - Action:
   - Expand marketing outreach or digital campaigns in smaller provinces while strengthening the focus on areas like HCM and Đồng Nai where the bulk of demand currently exists.
   - Explore the specifics in Đồng Nai to identify the types of phones applicants are using, the sources from which they are applying, and their intended loan purposes. This information can be utilized to optimize our application, services and tailor financial products more effectively.
-  
   ![image](https://github.com/user-attachments/assets/3c700606-c51c-4cf9-ae7d-7305d9cceb49)
+  - Applicants in Đồng Nai typically seek loans to purchase household appliances. We can leverage this insight to tailor our marketing messages and share this information with our partner, Siêu thị điện máy nội thất Chợ Lớn in Đồng Nai.
+  ![image](https://github.com/user-attachments/assets/c4cd9c8c-98f5-4f31-958c-338c6816ed76)
+  - Upon further analysis of Hà Nam's insights, we noted that there were five applications with a high loan amount, but all applicants were uncontactable and subsequently rejected. We can share this information with our sales team to encourage them to reach out to these applicants again and retarget them through our marketing platforms with tailored messages specifically designed for office workers.
+  
 
-#### Phone Type
+##### Phone Type
 
 ![image](https://github.com/user-attachments/assets/2e92f0ae-ace8-444d-b024-ad36a82ebe5f)
 
@@ -106,21 +116,76 @@ iPhone dominates both in the number of applications (highest) and loan amounts (
 ![image](https://github.com/user-attachments/assets/0eb9a343-987a-46e4-8be7-96065b99859b)
 
 
-#### Source
+##### Source
+![image](https://github.com/user-attachments/assets/344e9c35-4163-4d7d-818f-a4f37a7442a3)
+
 Google, TikTok, and Facebook generate the highest applications and loan amounts, with Google (674M loan amount) being the top contributor.
 - Insight:
   - Google might deliver high-value lead generation despite potentially higher costs compared to platforms like TikTok and Facebook.
   - EDM (Email) and Organic rank lower, indicating lesser engagement through these traditional or passive channels.
+  - Android users generally prefer TikTok and Facebook, whereas Google Search Engine Marketing (SEM) is more effective for engaging iOS users.
 - Action:
   - Invest more resources into high-performing channels like Google and TikTok, while reassessing the ROI for EDM.
   - Enhance and further invest in the SEO strategy, as this organic channel has demonstrated its ability to passively generate applications.
+    
+  ![image](https://github.com/user-attachments/assets/8943b743-e571-4057-b3c3-52b433f4002f)
+  ![image](https://github.com/user-attachments/assets/fa70d511-c290-415a-97d0-17940d4b3381)
 
 
 
-Interactive Trend Dashboard
 
-![image](https://github.com/user-attachments/assets/90005256-89e7-45e8-b70e-7269f437d37e)
+### Interactive Trend Dashboard
 
+![image](https://github.com/user-attachments/assets/ba526a60-0433-43f7-9e2b-c77cf8987741)
+
+
+
+#### Week Number
+
+![image](https://github.com/user-attachments/assets/7eb454ca-6267-488d-a08f-9311847ada3c)
+
+- Observation
+  - Applications and loan amounts increase significantly as the week progresses, peaking in Week 5 with 80 applications and a total loan amount of 1,647M.
+  - Week 2 and Week 3 exhibit minimal activity, with relatively low applications (less than 5) and loan amounts (just 10M in Week 3).
+
+- Insights: Most loan applications seem to cluster toward the end of the timeframe, particularly Week 5, indicating that customer behavior may accelerate as the month progresses. This could be due to payday cycles, financial obligations, or marketing/promotional campaigns concentrated in that period.
+- Action:
+  - Investigate Week 5's success by analyzing marketing efforts or user behaviors during this period and replicate effective strategies in lower-performing weeks.
+  - Consider spreading campaigns or reminders earlier in the month (Weeks 2-3) to balance loan activity.
+
+#### Application by Week of Month and Source
+
+![image](https://github.com/user-attachments/assets/0f7aec2a-1477-4d1b-8c58-e626a9b0051d)
+
+- Observations:
+  - Google and TikTok are the leading traffic sources, especially in Week 5, with Google slightly outperforming TikTok in terms of growth trajectory.
+  - Facebook, EDM, and Organic sources exhibit smaller contributions overall, with slower growth trends across all weeks.
+- Insights:
+  - Google and TikTok dominate as key platforms for generating applications, indicating strong engagement on these channels.
+  - Facebook, EDM, and Organic sources may not be yielding optimal results, despite potentially being long-standing or low-cost channels.
+- Action:
+  - Allocate more budget and resources toward Google and TikTok while conducting tests (e.g. A/B testing) on Facebook and EDM to refine content and audience targeting.
+  - Reevaluate and potentially overhaul EDM strategies or look into why this channel's growth lags despite being cost-effective.
+  - Continue our SEO operation.
+
+#### Loan Amount by Week of Month and Source
+
+![image](https://github.com/user-attachments/assets/7afc4f99-0e62-41db-b4d4-fda6c1c10bb4)
+
+- Observations:
+  - Google contributes the highest loan amounts by Week 5, outperforming TikTok with roughly 500M loan amounts from Google alone.
+  - TikTok remains steady across weeks, serving as a consistent second performer, despite a quick trough in March.
+  - Facebook, Organic, and EDM show flat or marginal growth, limited to lower loan volumes compared to the above channels.
+- Insights:
+  - Google not only demonstrates high engagement but also attracts larger loan amounts, suggesting that users with existing loan needs are actively searching for loan options.
+  - The disparity in loan volume suggests that optimizing the overall experience (from app use to loan usability) on platforms like Facebook and EDM or even our Organic site could boost performance.
+- Action:
+  - Strengthen Google campaigns with targeted ads highlighting loan products relating to the loan purposes (prioritizing vehicle loans as Google users' loan reason was to buy vehicles) for high-value customers from this channel. Digging deeper, we can use the filter section to focus on this vehicle loan need and see that these customers tend to approach us on the 4th week and on Wednesday (as demonstrated below)
+    
+    ![image](https://github.com/user-attachments/assets/703b0ba1-3036-4a02-9c2b-938261e82ae1)
+
+  - This move, once again, could only be successful when we bettered our data collection process as we lack data on the "Not Specified" loan purpose.
+  - Investigate why TikTok's application collapsed on the 3rd week to better our optimization.
 
 
 
