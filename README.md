@@ -11,25 +11,23 @@ Tool used:
 - Power Query: Data cleaning and processing
 - Power BI: Visualize insights
 
-### Raw Data Processing (Main points)
-The interpretation of each raw column will be provided in the Dictionary tab of the submitted file. The processing steps will be explained in greater detail in the "Technical" section of this project.
-
-Now, I will present the new columns generated to enhance our understanding of the insights:
-- INDEX: An INDEX column has been created to serve as the primary key for loan applications after removing duplicate rows. This column can later be utilized to COUNT the applications effectively.
-- DAY_OF_WEEK: This column indicates the day of the week corresponding to the CREATED_DATE, facilitating time-based analysis.
-- WEEK_OF_MONTH: This column reflects the week of the month derived from the CREATED_DATE, useful for understanding monthly application trends.
-- PHONE_MODEL: This column captures the specific phone model used by the customer when applying for the loan, providing valuable insights into customer technology.
-- PHONE_TYPE: This column denotes the type of phone (e.g., iPhone, Samsung, OPPO) used by the applicant, which can be beneficial for optimizing the application experience.
-- OS: This column specifies the operating system of the applicant's device, offering insights that can guide application optimization efforts.
-
-Note: In the context of this project, I will not be using Code_type and Status columns.
-
-## Technical (tbu)
+## Technical
 
 ### Excel & Power Query
+The interpretation of each raw column will be provided in the Dictionary tab of the submitted file. 
+
+![image](https://github.com/user-attachments/assets/44a102bd-4aa7-4066-9b9a-4509f978e8e0)
+
+
 The raw data needs big cleaning, it was filled with typos, duplicate values, inconsistent formatting, missing values, etc.
 
 ![image](https://github.com/user-attachments/assets/84b39dad-5798-4fd8-aa34-4196886be8f1)
+
+All of the Query steps have been assign a name for users to double-check:
+
+![image](https://github.com/user-attachments/assets/e787d8b2-b550-41dc-b8ec-ff27f6c76357)
+
+Note: In the context of this project, I will not be using Code_type and Status columns. Alright, let's get started.
 
 #### 1. Remove Duplicate Rows: 
 Eliminated one duplicate entry to ensure the uniqueness of records. There was only 1 duplicate row. The step was done using Excel built-in function of "Remmove Duplicate"
@@ -40,11 +38,65 @@ Eliminated one duplicate entry to ensure the uniqueness of records. There was on
 The CREATED_DATE column contained poorly formatted time data, which might challenge the time series analysis later on. Changing the data type to "Date" effectively resolved the issue.
 
 ![image](https://github.com/user-attachments/assets/f2755310-77f0-4997-8066-4128dced4ade)
-tbu
-### Power BI
-tbu
 
-## Insights and Recommendation (On-going)
+#### 3. Align Column Names:
+Standardize column names to be in English and capitalize them for uniformity.
+
+![image](https://github.com/user-attachments/assets/839a49a7-5e78-4cb0-9018-8fa8ea0371af)
+
+#### 4. Remove Redundant Information:
+Eliminate unnecessary details from the Industry Sub (e.g., removing "Manuf.") to streamline the data.
+
+![image](https://github.com/user-attachments/assets/f8cc3308-9f90-49ff-9faf-186decc5f7e2)
+
+
+#### 5. Handling Missing Values and Typos:
+
+![image](https://github.com/user-attachments/assets/331fb949-778a-40e5-a2b3-8f1c3d64785e)
+
+- For Loan Purpose, Phone Type, Gender assign (using a built-in feature Replace Values) a placeholder value of "Unknown" for missing entries.
+- Retain entries with a gross income of 0 while noting the need for further investigation.
+- For the Type column, fill in missing values with the most frequently occurring categorical value to maintain data integrity.
+- For WARD_NAME, there were data entry inconsistencies such as XÃ vs X. ỏ PHƯỜNG vs P. This was solved by replacing all XÃ/PHƯỜNG BY X. and P.
+
+#### Create New Columns
+Add new columns to enhance analysis:
+- INDEX: An INDEX column has been created to serve as the primary key for loan applications after removing duplicate rows. This column can later be utilized to COUNT the applications effectively.
+- DAY_OF_WEEK: This column indicates the day of the week corresponding to the CREATED_DATE, facilitating time-based analysis.
+
+  ![image](https://github.com/user-attachments/assets/cd85831a-56b3-423e-beda-d31738f00885)
+
+- WEEK_OF_MONTH: This column reflects the week of the month derived from the CREATED_DATE, useful for understanding monthly application trends.
+
+  ![image](https://github.com/user-attachments/assets/f55dfa13-db68-450b-9566-5601a2166beb)
+
+- Loan Application Index: A unique identifier for each loan application. This was done using Index Column in Power Query.
+- Phone Model: Information about the specific model of the applicant's phone, serving as a support column to create "Phone Type" column later on. This is done by taking what is after the first delimiter "-" and before the second "-"
+
+  ![image](https://github.com/user-attachments/assets/24c74833-77c7-452c-9c44-a56a23379c73)
+  ![image](https://github.com/user-attachments/assets/b8ea5e69-82a0-47f5-a864-5116551d4788)
+
+- Phone Type: Classification of the type of phone used for the application. This was done by taking what is before the first " " (space) 
+
+  ![image](https://github.com/user-attachments/assets/570681d2-a1c9-4314-bada-4828d1a9d2fc)
+
+- Operating System (OS): The operating system of the applicant's device. This was done using Conditional Column
+
+![image](https://github.com/user-attachments/assets/f221ec16-c4a4-4371-857b-000ffe449aaa)
+
+
+
+### Power BI
+1. Create new columns
+-    Age Group: The dataset includes a wide range of ages, making analysis challenging and less effective. Therefore, categorizing these ages is a beneficial approach.
+
+![image](https://github.com/user-attachments/assets/969dac4e-1cb9-4f6c-a869-03cb582321a6)
+
+- Income Group: Likewise, income will be classified into four specific categories: 'Not Specified' (for records with zero gross income), '<10M', '10-19M', and '20M+'.
+
+![image](https://github.com/user-attachments/assets/31efaf62-5466-4e1c-84bb-59b4afaef0f0)
+
+## Insights and Recommendation
 ### Interactive Insight Dashboard
 
 ![image](https://github.com/user-attachments/assets/f6858c91-692c-494f-8703-bb8ddd0ff5e6)
@@ -169,6 +221,23 @@ Google, TikTok, and Facebook generate the highest applications and loan amounts,
   - Advocate for better communication during application submission to reduce errors.
   - Provide an educational guide or FAQs to help applicants meet eligibility criteria.
 
+
+#### Key Recommendations
+1. Data Gaps:
+- Missing data in Income Group, Loan Purpose, and Industry significantly limits deeper analysis.
+- Action: Review the data collection process to ensure all relevant fields are filled during application submissions.
+2. Performance by Marketing Channel (This can be done using the Trend Dashboard):
+- Invest more in high-performing channels like Google and TikTok.
+- Explore reasons for low performance in Organic channels to improve engagement.
+
+3. Focus on High-Performing Segments:
+- Prioritize urban regions like Hồ Chí Minh and Đồng Nai, where demand and loan amounts are highest.
+- Customers using iPhones represent a premium segment worth targeting with higher loan tiers or specialized financial products.
+
+4. Optimize for Phone Types: Improve user experience for Android devices since these customers show some engagement but contribute less compared to iPhone users. Of course, we need to continue to maintain iOS user experience.
+
+5. Rejections: Review and address process inefficiencies to reduce application rejections and boost conversion rates.
+
 ### Interactive Trend Dashboard
 
 ![image](https://github.com/user-attachments/assets/ba526a60-0433-43f7-9e2b-c77cf8987741)
@@ -251,7 +320,7 @@ Google, TikTok, and Facebook generate the highest applications and loan amounts,
   - Leverage TikTok/Facebook (on Thursday)/Google with daily-specific campaigns (e.g., peak offer periods mid-week).
   - Perform a deep dive into non-performing channels like EDM, focusing on engagement strategies and user behavior analysis.
 
-#### Key Takeaways and Recommendations
+#### Key Recommendations
 1. Source Performance:
 - TikTok and Google are the standout performers across all metrics (applications and loan amounts).
 - Actions:
